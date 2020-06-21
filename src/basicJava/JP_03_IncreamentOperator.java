@@ -23,6 +23,14 @@ public class JP_03_IncreamentOperator {
     System.out.println(++y); //result= 3
     System.out.println(++y); //result =4
 		
+    int i = 0;
+	String a ="Senario:";
+	
+	System.out.println(a+ ++i); //string and integer cannot be concatinated without declaring variable
+	System.out.println(a+ ++i);
+	System.out.println(a+ ++i);
+	System.out.println(a+ ++i);
+	System.out.println(a+ ++i);
 		
 		
 
