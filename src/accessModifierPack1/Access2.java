@@ -1,6 +1,6 @@
-package intermediateJava;
+package accessModifierPack1;
 
-public class JP_01_AccMod_myClass {
+public class Access2 {
 	/*The scope of access modifiers in tabular form
 	------------+-------+---------+--------------+--------------+--------
 	            | Class | Package | Subclass     | Subclass     |Outside|
@@ -16,16 +16,33 @@ public class JP_01_AccMod_myClass {
 	------------+-------+---------+--------------+--------------+--------
 	*/
 	public static void main(String[] args) {
-		JP_01_Access_Modifier stu = new JP_01_Access_Modifier();
 		
-		stu.setName("mark");
-		System.out.println(stu.getName());
+		//Default Modifier:-we can access here in same package
+		//for default we see ==triangle== sign when write a.
+		Access1 a = new Access1();
+		System.out.println(a.hours);
+		System.out.println(a.min);
 		
-		stu.setAge(15);
-		System.out.println(stu.getAge());
 		
+		//for Public Modifier: we can access same package and everywhere
+		//for this we see the ==circle== sign
+		Access1 a1 = new Access1();
+		System.out.println(a1.pubHours);
+		System.out.println(a1.pubMin);
 		
-
+		//for the protected modifier :we can access inside the same package
+		//for this we see the ==yellow diamond==
+		Access1 a2 = new Access1();
+		System.out.println(a2.protHours);
+		System.out.println(a2.protMin);
+		
+        //This is for calling public method
+		Access1 m = new Access1();
+		System.out.println(m.gethoursPub());
+		
+		//this is for the default method
+		Access1 m1 = new Access1();
+		System.out.println(m1.gethoursDef());
 	}
 
 }
