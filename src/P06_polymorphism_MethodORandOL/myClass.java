@@ -26,8 +26,10 @@ public class myClass {
 		Bank def = new Bank_def(); //Refrence def point ot the object of def class
 		System.out.println(def.getIntrestRate());
 			
+		System.out.println(new Bank_xyz().getIntrestRate()); //Result:-10
+		 //or 
 		Bank xyz = new Bank_xyz();
-		System.out.println(xyz.getIntrestRate());
+		System.out.println(xyz.getIntrestRate());//Result:-10
 		
 		
 		

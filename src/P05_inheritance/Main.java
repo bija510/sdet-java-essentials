@@ -20,6 +20,9 @@ public class Main {
 		
 		System.out.println("=================================");
 		
+		
+		System.out.println(Mouse3.fruit());
+		
 		Mouse3 m3 = new Mouse3();
 		m3.leftClick();
 		m3.rightClick();

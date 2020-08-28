@@ -3,7 +3,7 @@ package P05_inheritance;
 public class Mouse2 extends Mouse {
 
 	
-	public static void connect() {
+	public void connect() {
 		System.out.println("connected!");
 	}
 }

@@ -2,19 +2,19 @@ package P05_inheritance;
 
 public class Mouse {
 
-	public static void leftClick() {
+	public void leftClick() {
 		System.out.println("Lclick!");
 	}
 	
-	public static void rightClick() {
+	public void rightClick() {
 		System.out.println("Rclick!");
 	}
 
-	public static void scrollUp() {
+	public void scrollUp() {
 		System.out.println("Scrolled Up!");
 	}
 	
-	public static void scrolldown() {
+	public void scrolldown() {
 		System.out.println("Scrolled Down!");
 	}
 }
