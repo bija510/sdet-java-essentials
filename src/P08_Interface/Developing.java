@@ -7,6 +7,7 @@ package P08_Interface;
 *******************************************************************/
 public class Developing implements BankingClient, Domainclient { // one class can implement multiple interface also
 	public static void main(String[] args) {
+		
 		Developing d = new Developing(); // d is responsible to called the method of "Developing" class
 		d.login();
 		d.paycreditcard(); // object.method
@@ -14,7 +15,7 @@ public class Developing implements BankingClient, Domainclient { // one class ca
 
 		BankingClient dr = new Developing(); 
 		// dr is responsible to called the method of "BankingClient" only
-		// return type = BankingClient this type of assigning is mechanism is called runtime Polymorphism
+		// return type = BankingClient this type of assigning mechanism is called runtime Polymorphism
 		Domainclient ds =new Developing();// so this is called "runtime polymorphism"
 		ds.investment();
 	}

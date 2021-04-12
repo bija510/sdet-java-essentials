@@ -10,6 +10,7 @@ public class Main {
 		m1.scrollUp();
 		m1.setColor("green");//This is specific to this class only
 		
+		
 		System.out.println("=================================");
 		Mouse2 m2 = new Mouse2();
 		m2.leftClick();
@@ -29,6 +30,9 @@ public class Main {
 		m3.scrolldown();
 		m3.scrollUp();
 		System.out.println(m3.hybrid);
+		
+		Mouse mm= new Mouse();
+		
 
 	}
 
