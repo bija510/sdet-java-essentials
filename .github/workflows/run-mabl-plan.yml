@@ -1,0 +1,22 @@
+name: Run Mabl Plan
+
+on:
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
+jobs:
+  run-mabl-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install mabl CLI
+        run: npm install -g @mablhq/mabl-cli
+
+      - name: Run Mabl Plan
+        env:
+          MABL_API_KEY: ${{ secrets.MABL_API_KEY }}
+        run: |
+          mabl auth activate-key $MABL_API_KEY
+          mabl deployments create --application-id PkYEsi72J3Z9yBvHUrl7LA-a --environment-id rxB4UXsT6OLUnzDznE1Ieg-e --labels Sanity --await-completion
