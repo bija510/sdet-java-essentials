@@ -1,0 +1,14 @@
+name: Trigger Jenkins Job
+
+on:
+  workflow_dispatch:   # Manual trigger in GitHub UI or via API
+  # or use other triggers like push, pull_request, etc.
+
+jobs:
+  trigger-jenkins:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Jenkins job remotely
+        run: |
+          curl -X POST --user ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_API_TOKEN }} "http://localhost:8080/job/mabl-cicd/build?token=${{ secrets.JENKIN_JOB_TOKEN}}"
