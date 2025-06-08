@@ -1,0 +1,23 @@
+name: dev depend trigger Jenkins Job
+
+on:
+  workflow_dispatch:   # Manual trigger in GitHub UI or via API
+  # or use other triggers like push, pull_request, etc.
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: |
+          echo "Running Job 1"
+          exit 1  # This will cause the job to fail
+
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Trigger Jenkins job remotely
+        run: |
+          curl -X POST --user ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_API_TOKEN }} "https://95cb-107-145-4-85.ngrok-free.app/job/mabl-cicd/build?token=${{ secrets.JENKIN_JOB_TOKEN}}"
