@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Trigger Jenkins job remotely
         run: |
-          curl -X POST --user ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_API_TOKEN }} "http://localhost:8080/job/mabl-cicd/build?token=${{ secrets.JENKIN_JOB_TOKEN}}"
+          curl -X POST --user ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_API_TOKEN }} "https://95cb-107-145-4-85.ngrok-free.app/job/mabl-cicd/build?token=${{ secrets.JENKIN_JOB_TOKEN}}"
