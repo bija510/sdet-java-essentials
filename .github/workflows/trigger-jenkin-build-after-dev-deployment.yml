@@ -1,4 +1,4 @@
-name: dev depend trigger Jenkins Job
+name: Trigger Jenkins Build After Deployment
 
 on:
   workflow_dispatch:   # Manual trigger in GitHub UI or via API
