@@ -1,0 +1,160 @@
+Mabl Certification Question
+1. As teams integrate testing earlier in the Software Development Life Cycle, adding testing earlier in the process is known as what?
+Answer: Shift-left
+
+2. What type of test runs are intended to provide a way to validate test edits without impacting overall stats, metrics, and insights?
+Answer: Local
+
+3. On what page on the mabl app can you find all of your most recent test runs organized by specific test, plan, or deployment event for easy analysis?
+Answer: Results
+
+4. Once you train a mabl test that executes under a test plan, mabl automatically starts capturing screenshots… This describes what feature in mabl?
+Answer: Visual change detection
+
+5. In mabl, which of these contains a group of tests and all of the information needed to run them?
+Answer: Plans
+
+6. Which of the following help with passing values to, from and in-between tests so you can keep your tests shorter and easier to troubleshoot and maintain?
+Answer: Variables
+
+7. In the Test Overview page, which tab lets you view and/or revert to previous versions of the test?
+Answer: Change history
+
+8. TRUE or FALSE - mabl is a no-code platform… use JavaScript Snippets
+Answer: False
+
+9. Which of the following best describes the mabl platform?
+Answer: Low code test automation
+
+10. In what page can you add your credentials to the ‘Credentials’ tab?
+Answer: Settings
+
+11. After navigating to a new page, it’s recommended practice to add what to verify that you have arrived at the expected page?
+Answer: An assertion
+
+12. True or false: It is recommended to record actions in a way that reflects how a user would perform them
+Answer: True
+
+13. Which of the following is the top-level concept of mabl, housing all of its key components?
+Answer: Workspace
+
+14. ‘User in the workspace who can see the contents of your workspace and trigger local runs…’ describes which type of role?
+Answer: Viewer
+
+15. Which of the following types of assertions make it easy to confirm that your test is on the right web page?
+Answer: URL
+
+16. In mabl, which of the following are associated with their respective URLs, and can be associated with multiple environments?
+Answer: Applications
+
+17. Which of the following is a grouping mechanism that helps you specify the order in which tests will run in a plan?
+Answer: Plan stages
+
+18. Flows in mabl are extremely valuable. What is a note of caution when using flows in a test?
+Answer: Editing one instance of a flow will impact all other instances
+
+19. Which tab in the mabl app would you visit to establish or change how your Applications and Environments are organized?
+Answer: Configuration
+
+20. Some teams, including mabl, take the peer review process a step further by using what section of the Settings page?
+Answer: Activity feed
+
+21. It is recommended to name tests according to:
+Answer: The features, sub-features, or components that are covered in the test
+
+22. Which of the following variable expressions would generate a random string of six upper and lower case letters?
+Answer: {{alpha:6}}
+
+23. Which roles can add an application in the Configuration tab in mabl?
+Answer: Editor, Owner
+
+24. If you know that certain actions in one test will be repeated in other tests, group those actions into a
+Answer: Flow
+
+25. By default, when you start recording a browser test, what step does the mabl Trainer add?
+Answer: A default Visit URL
+
+26. TRUE or FALSE - With mabl, you can load data that is external to your functional tests…
+Answer: True
+
+27. In the Tests Page, which tab lets you review Jira tickets created to communicate bugs?
+Answer: Issues
+
+28. What should be used to define specific test suites…
+Answer: Plan labels
+
+29. When you define a test using the mabl trainer, what can you include to confirm app state?
+Answer: Assertions
+
+30. The test ‘Visit all linked pages within the app’ is also known as what?
+Answer: Link crawler
+
+31. The test name, description, and other information outside of the trained steps is known as what?
+Answer: Test metadata
+
+32. Which of the following best defines a test within the mabl trainer?
+Answer: A series of automated actions called steps
+
+33. In mabl, which of these give you the ability to specify test executions, schedule runs, pass variables, etc.?
+Answer: Plans
+
+34. True or false: All test output exists at a static URL so you can directly share that with teammates.
+Answer: True
+
+35. mabl automatically adapts your tests to your changing app… This describes what feature in mabl?
+Answer: Auto-heal
+
+36. Which of the following help with passing values to, from and in-between tests?
+Answer: Variables
+
+37. In mabl, what can be used to control how tests are run within a plan?
+Answer: Plan stages
+
+38. TRUE or FALSE - You can create end-to-end API tests within mabl by importing Postman collections
+Answer: True
+
+39. Which of the following is the best definition of labels within mabl?
+Answer: A word or a phrase that you attribute to tests and plans for classification
+
+40. Tests are created and edited using the mabl
+Answer: Trainer
+
+41. As teams move from a Waterfall to an Agile model, they organize their work into
+Answer: Sprints
+
+42. What page on the mabl app allows you to view % of pages interacted with by mabl test?
+Answer: Coverage
+
+43. When you create a(n) ___ you define the logic mabl should use to confirm app state
+Answer: Assertion
+
+44. TRUE or FALSE - mabl provides a variety of ways to integrate your tests with your CI/CD pipeline
+Answer: True
+
+45. Which of the following is the best definition of labels within mabl?
+Answer:  word or a phrase that you attribute to tests and plans for classification and organization
+
+46. Tests are created and edited using the mabl _____.
+
+Answer: Trainer
+
+47. As teams move from a Waterfall to an Agile model for development, they organize their work into ____.
+Answer: Sprints
+
+48. What page on the mabl app allows you to view what percentage of your application's pages are interacted
+with by a mabl test?
+Answer: Coverage
+
+49. When you create a(n) _____, you define the logic mabl should use to confirm that your application is in the
+correct state at a specific step in a test run
+Answer: Assertion
+
+50. TRUE or FALSE - mabl provides a variety of ways to integrate your automated end-to-end tests with your
+existing CI/CD pipeline, including native plug-ins, and CLI (Command Line Interface) in addition to API
+endpoints and a helpful curl-command builder.
+Answer: True
+
+
+
+
+
